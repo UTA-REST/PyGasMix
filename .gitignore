@@ -7,4 +7,4 @@ venv/*
 *.so
 *.html
 *.c
-
+.DS_Store
