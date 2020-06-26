@@ -17761,6 +17761,5 @@ gd['gas_DME/XEXC1'] = XEXC1G25
 gd['gas_DME/YEXC1'] = YEXC1G25
 gd['gas_DME/EnergyLevels'] = EnergyLevelsG25
 
-print("Gas name changes have been made here in Setup_npy.py.")
 
 np.save(os.path.join(os.path.dirname(os.path.realpath(__file__)),"gases"), gd,allow_pickle=True)

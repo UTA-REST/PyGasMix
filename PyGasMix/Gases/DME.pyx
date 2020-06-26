@@ -85,6 +85,8 @@ cdef void Gas_DME(Gas*object):
     APOP = exp(object.EnergyLevels[0]/object.ThermalEnergy)
 
     EN = -1*object.EnergyStep/<float>(2.0)
+
+
     for I in range(4000):
         EN+=object.EnergyStep
 

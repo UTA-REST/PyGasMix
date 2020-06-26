@@ -19,6 +19,7 @@ from Gases.DME cimport Gas_DME
 from Gases.XENONMERT cimport Gas_xenonmert
 from libc.string cimport memset
 from PyGasMix.Gas cimport Gas
+from PyGasMix.GasesText import FillOutTextData
 
 cdef void callGASF(Gas*GAS, Params):
     if GAS.GasNumber == 1:
@@ -112,3 +113,4 @@ cdef class Gasmix:
         cdef Gas temp
         for i in range(6):
             callGASF(&self.Gases[i], self.ExtraParameters)
+        FillOutTextData(self)
